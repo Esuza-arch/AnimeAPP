@@ -14,3 +14,23 @@
     
     
 </head>
+<body >
+
+    <header>
+        <div class="logo"><h1>AniFind</h1></div>
+        <hr>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search anime..." onkeyup="searchAnime()">
+            <select id="ratingFilter" onchange="filterByRating()">
+                <option value="">Filter by Rating</option>
+                <option value="4">4 Stars & Up</option>
+                <option value="3">3 Stars & Up</option>
+                <option value="2">2 Stars & Up</option>
+                <option value="1">1 Star & Up</option>
+            </select>
+        </div>
+    <hr>
+        <button onclick="myFunction()">Dark/Light </button>
+        
+            
+    </header>
