@@ -16,3 +16,14 @@ function myFunction() {
     let element = document.body;
     element.classList.toggle("darkmode");
 }
+
+let favorites = [];
+
+function addToFavorites(animeName) {
+    if (!favorites.includes(animeName)) {
+        favorites.push(animeName);
+        updateFavoritesUI();
+    } else {
+        alert(animeName + "is already in your favorites!");
+    }
+}
