@@ -34,3 +34,14 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+.anime-card img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.anime-name{
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
