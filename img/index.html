@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Search and Favorites</title>
+    <link rel="icon" type="image/x-icon" href="img/icon2.png" >
+
+    
+    
+    
+    
+</head>
+<body >
+
+    <header>
+        <div class="logo"><h1>AniFind</h1></div>
+        <hr>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search anime..." onkeyup="searchAnime()">
+            <select id="ratingFilter" onchange="filterByRating()">
+                <option value="">Filter by Rating</option>
+                <option value="4">4 Stars & Up</option>
+                <option value="3">3 Stars & Up</option>
+                <option value="2">2 Stars & Up</option>
+                <option value="1">1 Star & Up</option>
+            </select>
+        </div>
+    <hr>
+        <button onclick="myFunction()">Dark/Light </button>
+        
+            
+    </header>
+    
+
+    <section>
+        <h2>Anime List</h2>
+        <div id="anime-container">
+            <div class="anime-card" data-name="Naruto">
+                <img src="img/Naruto.jpg" alt="Naruto">
+                <h3>Naruto</h3>
+                <P>A young ninja, Naruto Uzumaki, strives to become the strongest Hokage<br> while protecting his village from powerful enemies.</P>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <hr>
+                <button onclick="addToFavorites('Naruto')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Attack on Titan">
+                <img src="img/img1.jpg" alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>In a world overrun by Titans, humanity fights for survival <br>inside walled cities while uncovering the Titans’ dark mysteries.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <hr>
+                <button onclick="addToFavorites('Attack on Titan')">Add to Favorites</button>
+                
+            </div>
+           
+            <div class="anime-card" data-name="One Piece">
+                <img src="img/zoro.jpg" alt="One Piece">
+                <h3>One Piece</h3>
+                <p>Luffy and his pirate crew for the legendary treasure, <br>"One Piece," in a world full of adventure and danger.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <hr>
+                <button onclick="addToFavorites('One Piece')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Demon Slayer">
+                <img src="img/img2.jpg" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>Tanjiro embarks on a dangerous quest to avenge his family and <br>cure his demon-turned sister, battling powerful demons along the way.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('Demon Slayer')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="My Hero Academia">
+                <img src="img/mha.jpg" alt="My Hero Academia">
+                <h3>My Hero Academia</h3>
+                <p>In a world where almost everyone has superpowers, <br>Izuku Midoriya dreams of becoming the greatest hero despite being born powerless.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('My Hero Academia')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Your Name">
+                <img src="img/name.jpg" alt="Your Name">
+                <h3>Your Name</h3>
+                <p>Two high school students, Taki and Mitsuha, mysteriously swap bodies and begin living each other's lives. <br>As they form a deep connection, they must find a way to meet before a looming disaster strikes.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('Your Name')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Tokyo Ghoul">
+                <img src="img/kaneki.jpg" alt="Tokyo Ghoul">
+                <h3>Tokyo Ghoul</h3>
+                <p>After a near-death encounter, Kaneki becomes half-ghoul <br>and struggles with his new life, torn between two worlds.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('Tokyo Ghoul')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Black CLover">
+                <img src="img/Asta.jpg" alt="Black Clover">
+                <h3>Black Clover</h3>
+                <p>In a world where magic is everything, Asta, born without magic, <br>strives to become the Wizard King, fighting powerful enemies along the way.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('Black Clover')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Bleach">
+                <img src="img/Aizen.jpg" alt="Bleach">
+                <h3>Bleach</h3>
+                <p>Ichigo Kurosaki becomes a Soul Reaper and battles evil spirits <br>known as Hollows while protecting the living world.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <hr>
+                <button onclick="addToFavorites('Bleach')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Death Note">
+                <img src="img/L.jpg" alt="Death Note">
+                <h3>Death Note</h3>
+                <p>Light Yagami uses a deadly notebook to eliminate criminals,<br> but a genius detective named L stands in his way.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <button onclick="addToFavorites('Death Note')">Add to Favorites</button>
+            </div>
+            <div class="anime-card" data-name="Pokemon">
+                <img src="img/pikachu3.jpg" alt="Pokemon">
+                <h3>Pokemon</h3>
+                <p>Pokémon is a game where players catch, train, and battle creatures called Pokémon in various environments.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <hr>
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon name"> <hr>
+                <button onclick="fetchData()">Amaze Me</button>
+                 
+                <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display : none">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Favorites</h2>
+        <ul id="favorites-list">
+            
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
