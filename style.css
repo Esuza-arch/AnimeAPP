@@ -5,3 +5,7 @@ body{
     background-color: #f4f4f4;
     color: #a7b50d;
 }
+.darkmode{
+    background-color: #04081d;
+    color:  rgb(10, 67, 117);
+}
