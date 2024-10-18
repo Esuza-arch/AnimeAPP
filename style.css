@@ -45,3 +45,18 @@ body{
     margin: 10px 0;
     color: #333;
 }
+.anime-rating{
+    color: gold;
+    margin-bottom: 10px;
+}
+.anime-description{
+    font-size: 1em;
+    color: #666;
+}header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
