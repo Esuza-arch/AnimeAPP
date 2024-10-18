@@ -27,3 +27,14 @@ function addToFavorites(animeName) {
         alert(animeName + "is already in your favorites!");
     }
 }
+
+function updateFavoritesUI() {
+    const favoritesList = document.getElementById('favorites-list');
+    favoritesList.innerHTML = '';
+
+    favorites.forEach(anime => {
+        const li = document.createElement('li');
+        li.textContent = anime;
+        favoritesList.appendChild(li);
+    });
+}
