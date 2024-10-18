@@ -67,3 +67,12 @@ body{
     border: none;
     border-radius: 5px;
 }
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
