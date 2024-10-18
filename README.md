@@ -1,13 +1,17 @@
 Anime Search Web App
+
 Project Overview
+
 This project is a web application that allows users to search for anime, filter them based on their ratings, and switch between light and dark modes. The app also has a feature where users can add their favorite anime to a list and view Pokémon details using a public API. It's built using HTML, CSS, and JavaScript with the help of the json-server to simulate a local API.
 
 Features
+
 Search Anime: Type the name of any anime in the search bar to see matching results.
 Filter by Rating: Use the dropdown menu to filter anime based on ratings.
 Light/Dark Mode: Toggle between light and dark modes using the switch in the top corner.
 Add to Favorites: You can add your favorite anime to a favorites list.
 Fetch Pokémon Data: Get details of a specific Pokémon using the Pokémon API.
+
 How to Use
 Search Anime:
 
