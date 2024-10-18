@@ -17,3 +17,10 @@ body{
     color: black;
     border: 2px solid #04AA6D;
 }
+
+#anime-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
