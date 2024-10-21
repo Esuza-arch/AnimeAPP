@@ -11,7 +11,12 @@ document.addEventListener("DOMContentLoaded", () =>{
   searchInput.addEventListener("keyup", () => {
     const query = serchInput.value;
     if (query) {
-      fetch()
+      fetch(`${apiUrl}${query}`)
+      .then(response => response.json())
+      .then(data => displayAnime(data.data))
+      .catch(error => console.error("Error fetching data:", error));
+    } else {
+      animeContainer.innerHTML = "";
     }
   })
-})
+});
