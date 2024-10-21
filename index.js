@@ -52,7 +52,11 @@ function displayAnime(animeList) {
 
     animeCard.setAttribute("data-rating", rating);
     animeCard.innerHTML =`
-    <img src="${imageUrl}" alt="${title}">
-    <h3>${title}`
-  })
+      <img src="${imageUrl}" alt="${title}">
+      <h3>${title}</h3>
+      <p>${synopsis.substring(0, 100)}...</p>
+      <p>Rating: ${(rating / 10).toFixed(1)}/10</p> <!-- Convert rating to a 10 point scale for display -->
+      <button onclick="addToFavorites('${title}')">Add to Favorites</button>
+    `;
+  });
 }
