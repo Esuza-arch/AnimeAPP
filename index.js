@@ -22,5 +22,6 @@ document.addEventListener("DOMContentLoaded", () =>{
 });
 
 rating.addEventListener("change", () => {
-  const ratingValue = 
+  const ratingValue = parseFloat(ratingFilter.value) * 10;
+  const animeCards =
 })
