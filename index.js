@@ -72,5 +72,10 @@ window.addToFavorites = function(animeTitle) {
 };
 
 function updateFavoritesUI() {
-  
+  favoritesList.innerHTML = "";
+  favorites.forEach(anime => {
+    const li = document.createElement("li");
+    li.textContent = anime;
+    favoritesList.appendChild(li);
+  });
 }
