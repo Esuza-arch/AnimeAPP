@@ -27,6 +27,10 @@ rating.addEventListener("change", () => {
 
   animeCards.forEach(card => {
     const rating = parseFloat(card.getAttribute("data-rating"));
-    if ()
-  })
-})
+    if (rating >= ratingValue || !ratingValue) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
