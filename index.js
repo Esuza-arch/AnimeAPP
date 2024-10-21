@@ -70,3 +70,7 @@ window.addToFavorites = function(animeTitle) {
     alert(`${animeTitle} is already in your favorites!`);
   }
 };
+
+function updateFavoritesUI() {
+  
+}
