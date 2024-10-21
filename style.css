@@ -10,3 +10,20 @@ body{
     background-color: #1c1c1c;
     color: #485a92
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.search-bar input, .search-bar select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
