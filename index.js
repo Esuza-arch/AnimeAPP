@@ -6,4 +6,9 @@ document.addEventListener("DOMContentLoaded", () =>{
   const themeToggle = document.getElementById("theme-toggle");
   const favoritesList = document.getElementById("favorites-list");
   let favorites = [];
+
+
+  searchInput.addEventListener("keyup", () => {
+    
+  })
 })
