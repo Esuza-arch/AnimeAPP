@@ -26,6 +26,6 @@ rating.addEventListener("change", () => {
   const animeCards = document.querySelectorAll(".anime-card");
 
   animeCards.forEach(card => {
-    
+    const rating = 
   })
 })
