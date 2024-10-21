@@ -45,6 +45,7 @@ function displayAnime(animeList) {
     const animeCard = document.createElement("div");
     animeCard.classList.add("anime-card");
 
+    const title = anime.attributes.titles.en || anime.attributes.titles.en_jp || "No Title";
     
   })
 }
