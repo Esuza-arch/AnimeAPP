@@ -63,5 +63,10 @@ function displayAnime(animeList) {
 }
 
 window.addToFavorites = function(animeTitle) {
-  if ()
-}
+  if (!favorites.includes(animeTitle)) {
+    favorites.push(animeTitle);
+    updateFavoritesUI();
+  } else {
+    alert(`${animeTitle} is already in your favorites!`);
+  }
+};
