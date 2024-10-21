@@ -51,6 +51,8 @@ function displayAnime(animeList) {
     const rating = parseFloat(anime.attributes.averageRating) || 0;
 
     animeCard.setAttribute("data-rating", rating);
-
+    animeCard.innerHTML =`
+    <img src="${imageUrl}" alt="${title}">
+    <h3>${title}`
   })
 }
