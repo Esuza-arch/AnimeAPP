@@ -61,3 +61,7 @@ function displayAnime(animeList) {
     animeContainer.appendChild(animeCard);
   });
 }
+
+window.addToFavorites = function(animeTitle) {
+  
+}
