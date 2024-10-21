@@ -58,5 +58,6 @@ function displayAnime(animeList) {
       <p>Rating: ${(rating / 10).toFixed(1)}/10</p> <!-- Convert rating to a 10 point scale for display -->
       <button onclick="addToFavorites('${title}')">Add to Favorites</button>
     `;
+    animeContainer.appendChild(animeCard);
   });
 }
