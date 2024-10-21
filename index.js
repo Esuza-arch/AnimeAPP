@@ -34,3 +34,7 @@ rating.addEventListener("change", () => {
     }
   });
 });
+
+themeToggle.addEventListener("click", () => {
+  
+})
