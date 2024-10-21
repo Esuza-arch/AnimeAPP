@@ -49,3 +49,7 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.anime-card img {
+    width: 100%;
+    border-radius: 8px;
+}
