@@ -43,5 +43,8 @@ function displayAnime(animeList) {
   animeContainer.innerHTML = "";
   animeList.forEach(anime => {
     const animeCard = document.createElement("div");
+    animeCard.classList.add("anime-card");
+
+    
   })
 }
