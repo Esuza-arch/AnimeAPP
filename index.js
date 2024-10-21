@@ -41,5 +41,7 @@ themeToggle.addEventListener("click", () => {
 
 function displayAnime(animeList) {
   animeContainer.innerHTML = "";
-  animeList.forEach()
+  animeList.forEach(anime => {
+    const animeCard = document.createElement("div");
+  })
 }
