@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const title = anime.attributes.titles.en || anime.attributes.titles.en_jp || "No Title";
       const synopsis = anime.attributes.synopsis || "No description available.";
-      const imageUrl = anime.attributes.psterImage.medium || "default.jpg";
+      const imageUrl = anime.attributes.posterImage.medium || "default.jpg";
       const rating = parseFloat(anime.attributes.averageRating) || 0;
 
       animeCard.setAttribute("data-rating", rating);
