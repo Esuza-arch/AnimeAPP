@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
   searchInput.addEventListener("keyup", () => {
     const query = serchInput.value;
-    
+    if (query) {
+      fetch()
+    }
   })
 })
