@@ -40,5 +40,6 @@ themeToggle.addEventListener("click", () => {
 });
 
 function displayAnime(animeList) {
-  
+  animeContainer.innerHTML = "";
+  animeList.forEach()
 }
