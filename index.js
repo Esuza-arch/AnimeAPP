@@ -22,5 +22,5 @@ document.addEventListener("DOMContentLoaded", () =>{
 });
 
 rating.addEventListener("change", () => {
-  
+  const ratingValue = 
 })
