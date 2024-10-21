@@ -28,6 +28,15 @@ header {
     border: none;
 }
 
+button {
+    padding: 0.5rem 1rem;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 button:hover {
     background-color: #b20610;
 }
