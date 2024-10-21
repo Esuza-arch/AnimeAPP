@@ -36,5 +36,5 @@ rating.addEventListener("change", () => {
 });
 
 themeToggle.addEventListener("click", () => {
-  
-})
+  document.body.classList.toggle("darkmode");
+});
