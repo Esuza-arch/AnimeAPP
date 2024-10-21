@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", () =>{
   const searchInput = document.getElementById("searchInput");
   const ratingFilter = document.getElementById("ratingFilter");
   const themeToggle = document.getElementById("theme-toggle");
-  
+  const favoritesList = document.getElementById("favorites-list");
+  let favorites = [];
 })
