@@ -63,5 +63,5 @@ function displayAnime(animeList) {
 }
 
 window.addToFavorites = function(animeTitle) {
-  
+  if ()
 }
