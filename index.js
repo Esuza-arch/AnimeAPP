@@ -23,5 +23,9 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 rating.addEventListener("change", () => {
   const ratingValue = parseFloat(ratingFilter.value) * 10;
-  const animeCards =
+  const animeCards = document.querySelectorAll(".anime-card");
+
+  animeCards.forEach(card => {
+    
+  })
 })
